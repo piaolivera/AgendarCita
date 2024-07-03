@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar Cita</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-image">
+        <div class="overlay">
+            <div class="container">
+                <h1  >Agendar Cita</h1>
+                <form id="appointment-form">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="date">Fecha:</label>
+                    <input type="date" id="date" name="date" required>
+                    <span id="date-error" class="error-message"></span>
+
+                    <label for="time">Hora:</label>
+                    <input type="time" id="time" name="time" required>
+                    <span id="time-error" class="error-message"></span>
+
+                    <button type="submit">Agendar y Pagar</button>
+                </form>
+                <div id="payment-container">
+                    <h2>Información de Pago</h2>
+                    <form id="payment-form">
+                        <label for="card-number">Número de Tarjeta:</label>
+                        <input type="text" id="card-number" name="card-number" required>
+
+                        <label for="expiry-date">Fecha de Expiración:</label>
+                        <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/AA" required>
+
+                        <label for="cvv">CVV:</label>
+                        <input type="text" id="cvv" name="cvv" required>
+
+                        <button type="submit">Pagar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
